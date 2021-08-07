@@ -52,7 +52,7 @@ $(function () {
         $('.btn span:last-child').css({ transform: 'rotateZ(0)' });
       } else {
         $('.menu').animate({
-          width: '25%',
+          width: '30%',
           padding: 40
         }, 500);
         $(this).css({
@@ -140,7 +140,7 @@ $(function () {
   //controlling the pages 
   $('#home').click(function () {
     $('.animation').show();
-    $('.about, .work, .services, .contact').hide()
+    $('.about, .certif, .work, .services, .contact').hide()
     $('.main').animate({ width: '100vw' })
     $('.menu').animate({ width: 0, padding: 0 })
     $('.animation span').show(200)
@@ -155,7 +155,18 @@ $(function () {
 
   $('#about').click(function () {
     $('.about').css({ display: 'flex' })
-    $('.animation, .work, .services, .contact').hide()
+    $('.animation, .certif, .work, .services, .contact').hide()
+    $('.main').animate({ width: '100vw' })
+    $('.menu').animate({ width: 0, padding: 0 })
+    $('.animation span').show(200)
+    $('.btn').css({ left: -75 })
+    $('.btn span:nth-child(2)').show();
+    $('.btn span:first-child').css({ transform: 'rotateZ(0)  translate(0, 0)' });
+    $('.btn span:last-child').css({ transform: 'rotateZ(0)' });
+  })
+  $('#cert').click(function () {
+    $('.certif').css({ display: 'flex' })
+    $('.animation, .work, .services, .about, .contact').hide()
     $('.main').animate({ width: '100vw' })
     $('.menu').animate({ width: 0, padding: 0 })
     $('.animation span').show(200)
@@ -166,7 +177,7 @@ $(function () {
   })
   $('#work').click(function () {
     $('.work').show()
-    $('.animation, .about, .services, .contact').hide()
+    $('.animation, .about, .certif, .services, .contact').hide()
     $('.main').animate({ width: '100vw' })
     $('.menu').animate({ width: 0, padding: 0 })
     $('.animation span').show(200)
@@ -180,7 +191,7 @@ $(function () {
   })
   $('#services').click(function () {
     $('.services').css({ display: 'flex' })
-    $('.animation, .work, .about, .contact').hide()
+    $('.animation, .certif, .work, .about, .contact').hide()
     $('.main').animate({ width: '100vw' })
     $('.menu').animate({ width: 0, padding: 0 })
     $('.animation span').show(200)
@@ -194,7 +205,7 @@ $(function () {
   })
   $('#contact').click(function () {
     $('.contact').css({ display: 'flex' })
-    $('.animation, .work, .services, .about').hide()
+    $('.animation, .certif, .work, .services, .about').hide()
     $('.main').animate({ width: '100vw' })
     $('.menu').animate({ width: 0, padding: 0 })
     $('.animation span').show(200)

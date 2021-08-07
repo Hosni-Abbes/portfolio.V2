@@ -56,7 +56,7 @@ function sendEmail(e) {
       Email.send({
           SecureToken: "ea03a52c-fd57-4c58-ba2d-c651006915bc",
           To: "hosny.abbes@gmail.com",
-          From: email,
+          From: email.value,
           Subject: "Contact Portfolio..",
           Body: msg.value
       }).then( 
@@ -73,3 +73,4 @@ function sendEmail(e) {
     alert('Please fill out all fields.');
   }
 }
+ 

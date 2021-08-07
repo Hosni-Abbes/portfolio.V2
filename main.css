@@ -23,7 +23,7 @@ img {
 a {
   color: #fff;
   text-decoration: none;
-  font-size: 3rem;
+  font-size: 2rem;
   margin: 30px 0;
   text-align: center;
   transition: all 0.3s ease-in-out;
@@ -43,7 +43,7 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  margin-top: 200px;
+  margin-top: 150px;
 }
 .loader_container .loader {
   background: #000;
@@ -113,6 +113,12 @@ a {
     width: 100%;
   }
 }
+.loading_word {
+  margin-top: 40px;
+  font-size: 30px;
+}
+
+/*CONTAINER*/
 .container {
   display: none;
   justify-content: space-between;
@@ -169,7 +175,7 @@ a {
 }
 .animation .intro {
   position: relative;
-  margin: 100px auto;
+  margin: 140px auto;
   display: flex;
   flex-direction: column;
   font-size: 40px;
@@ -352,8 +358,8 @@ a {
   .animation span:first-of-type,
   .animation span:nth-of-type(5),
   .animation span:last-of-type {
-    bottom: 0px;
-    left: 0px;
+    bottom: 10px;
+    left: 10px;
   }
   .animation span:first-of-type {
     width: 110px;
@@ -473,7 +479,7 @@ a {
 }
 @media (max-width: 767px) {
   .about {
-    margin: 80px 20px;
+    margin: 80px 6px;
     padding: 0px 10px 10px;
   }
   .about .image {
@@ -485,17 +491,73 @@ a {
     flex-wrap: wrap;
     font-size: 17px;
     font-weight: normal;
+    width: 100%;
   }
   .about .about_me h1 {
     margin-bottom: 0px;
+    width: 100%;
   }
   .about .about_me_txt {
     width: 100%;
-    margin: 50px 10px 0px;
+    margin: 50px 0px 0px;
   }
   .about .my_skills {
     width: 100%;
-    margin: 20px 10px 0px;
+    margin: 10px auto;
+  }
+}
+
+/* CERTIFICATIONS */
+.certif {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.certif .certDiv {
+  width: 50%;
+  height: 50%;
+  margin: 60px 0px 140px;
+  text-align: center;
+}
+.certif .certDiv a {
+  font-size: 20px;
+}
+.certif .certControll {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.certTitle {
+  margin-bottom: 20px;
+}
+.certImg {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: all 0.3s ease-in-out;
+}
+.certif .certControll button {
+  padding: 10px;
+  border: 1px solid #ff5722;
+  outline: none;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 18px;
+  background: transparent;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+.certif .certControll .prev:hover,
+.certif .certControll .next:hover {
+  background-color: #ff5722;
+}
+@media (max-width: 767px) {
+  .certif .certDiv {
+    width: 80%;
+    margin: 60px 0px 150px;
   }
 }
 
@@ -872,6 +934,9 @@ textarea:focus::-webkit-input-placeholder {
   font-size: 11px;
 }
 @media (max-width: 767px) {
+  .contact {
+    margin: 60px 20px 0px;
+  }
   .contact_form {
     width: 100%;
   }
